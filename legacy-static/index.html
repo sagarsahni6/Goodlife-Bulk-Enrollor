@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goodlife Bulk Enrollor v4.0 — Official Chrome Web Store Extension</title>
+  <meta name="description" content="Add Goodlife Bulk Enrollor v4.0 Chrome Extension directly from the Chrome Web Store for Hero MotoCorp authorized dealerships. Automate GoodLife & Joyride enrollments 10x faster.">
+  <meta name="keywords" content="Goodlife Bulk Enrollor, Chrome Web Store, Hero MotoCorp, Joyride enrollment, Hero GoodLife portal, bulk VIN automation">
+  <meta name="author" content="CalcLabz">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Goodlife Bulk Enrollor v4.0 — Chrome Web Store">
+  <meta property="og:description" content="Bulk automation for GoodLife & Joyride enrollment on Hero GoodLife portal. Smart validation, intelligent processing, and offline privacy.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/promo_large_1280x800.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="bg-glow-container" aria-hidden="true">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" id="nav-brand">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+        </div>
+        Goodlife <span class="text-gradient-red">Enrollor</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#install" class="nav-link" id="link-install">Chrome Web Store</a></li>
+        <li><a href="#features" class="nav-link" id="link-features">Features</a></li>
+        <li><a href="#simulator" class="nav-link" id="link-simulator">Live Demo</a></li>
+        <li><a href="#csv-guide" class="nav-link" id="link-csv">CSV Format</a></li>
+        <li><a href="#privacy-policy" class="nav-link" id="link-privacy">Privacy Policy</a></li>
+        <li><a href="#faq" class="nav-link" id="link-faq">FAQ</a></li>
+      </ul>
+
+      <a href="https://chromewebstore.google.com/" target="_blank" rel="noopener noreferrer" class="nav-cta-btn" id="nav-cws-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+        Add to Chrome
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Verified Chrome Web Store Extension for Hero MotoCorp Dealerships
+      </div>
+
+      <h1 class="hero-title">
+        Automate <span class="text-gradient-blue">GoodLife</span> & <span class="text-gradient-red">Joyride</span> Bulk Enrollments in Seconds
+      </h1>
+
+      <p class="hero-description">
+        Process hundreds of VINs effortlessly with zero data entry mistakes. Features self-tuning speed control, smart skip logic, and 100% offline privacy protection.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://chromewebstore.google.com/" target="_blank" rel="noopener noreferrer" class="btn-primary" id="btn-hero-cws">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+          Add to Chrome — Available on Web Store
+        </a>
+        <a href="#simulator" class="btn-secondary" id="btn-hero-demo">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Try Live Simulator
+        </a>
+      </div>
+
+      <div class="feature-pills">
+        <div class="pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Google Chrome Verified
+        </div>
+        <div class="pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          10x Processing Speed
+        </div>
+        <div class="pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          100% Local Browser Privacy
+        </div>
+        <div class="pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Smart Skip & Auto-Retry
+        </div>
+      </div>
+
+      <!-- App Product Screenshot Showcase -->
+      <div class="showcase-frame">
+        <img src="assets/promo_large_1280x800.png" alt="Goodlife Bulk Enrollor Extension Dashboard" class="showcase-img" id="hero-showcase-img">
+
+        <!-- Floating Stats Widgets -->
+        <div class="floating-stat floating-stat-1">
+          <div class="stat-icon-wrap" style="color: #059669;">⚡</div>
+          <div>
+            <div class="stat-val">0.4s / VIN</div>
+            <div class="stat-lbl">Adaptive Engine Speed</div>
+          </div>
+        </div>
+
+        <div class="floating-stat floating-stat-2">
+          <div class="stat-icon-wrap" style="color: #2563eb;">🎯</div>
+          <div>
+            <div class="stat-val">99.8%</div>
+            <div class="stat-lbl">Automated Accuracy</div>
+          </div>
+        </div>
+  </section>
+
+  <!-- Hero GoodLife Membership Tiers & Joyride Integration Section (Inspired by heromotocorp.com/en-in/good-life.html) -->
+  <section class="section" id="tiers" style="background: #0a0c12; border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" style="color: #E31E24; font-weight: 800;">Hero MotoCorp Loyalty Ecosystem</div>
+        <h2 class="section-title">GoodLife Membership Tiers & Joyride Integration</h2>
+        <p class="section-subtitle">Explore how Joyride Automate effortlessly processes all official Hero GoodLife membership tiers, assigning reward points, insurance coverage, and coupons in milliseconds.</p>
+      </div>
+
+      <!-- Tier Tabs -->
+      <div class="tier-tabs-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 32px;">
+        <button class="tier-tab-btn active" data-tier="gold">GoodLife Gold Tier</button>
+        <button class="tier-tab-btn" data-tier="platinum">GoodLife Platinum Tier</button>
+        <button class="tier-tab-btn" data-tier="diamond">GoodLife Diamond Tier</button>
+        <button class="tier-tab-btn" data-tier="silver">GoodLife Silver Tier</button>
+        <button class="tier-tab-btn" data-tier="joyride">Joyride AMC Plan</button>
+      </div>
+
+      <!-- Active Tier Display Card -->
+      <div id="tier-card-container" class="tier-card-box">
+        <div class="tier-card-header">
+          <div>
+            <span class="tier-badge" id="tier-badge-text">MOST POPULAR</span>
+            <h3 class="tier-title" id="tier-title-text">GoodLife Gold Tier</h3>
+          </div>
+          <div style="text-align: right;">
+            <div class="tier-price" id="tier-price-text">₹399 / 2 Years</div>
+            <div class="tier-points" id="tier-points-text">3x Reward Points</div>
+          </div>
+        </div>
+
+        <div class="tier-insurance-box">
+          <div style="font-size: 1.5rem; margin-right: 12px;">🛡️</div>
+          <div>
+            <div style="font-size: 0.8rem; color: #94a3b8;">Complimentary Insurance Benefit</div>
+            <div style="font-weight: 700; color: #ffffff;" id="tier-insurance-text">₹1,00,000 Personal Accident Cover</div>
+          </div>
+        </div>
+
+        <ul class="tier-perks-list" id="tier-perks-list">
+          <li>✓ 1,000 Welcome Bonus Reward Points</li>
+          <li>✓ Free Annual Wash & Polish Vouchers</li>
+          <li>✓ 5% Discount on Hero Genuine Spare Parts</li>
+          <li>✓ Priority Service Lane Access at Dealerships</li>
+        </ul>
+
+        <div class="tier-automation-note">
+          🤖 <strong>Joyride Automate Execution Handling:</strong> <span id="tier-note-text">Parses VIN, customer contact, applies Gold plan code, dispatches Angular validation in 0.4s.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chrome Web Store Direct Install Banner -->
+  <section class="section" id="install" style="background: #ffffff; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Chrome Web Store</div>
+        <h2 class="section-title">Get Goodlife Bulk Enrollor on Chrome</h2>
+        <p class="section-subtitle">Install directly from the official Chrome Web Store with 1-click seamless installation.</p>
+      </div>
+
+      <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+        <!-- Step 1 -->
+        <div class="card" style="text-align: center;">
+          <div class="card-icon blue" style="margin: 0 auto 20px;">
+            <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800;">1</span>
+          </div>
+          <h3 class="card-title">Open Web Store</h3>
+          <p class="card-text">
+            Click <strong>Add to Chrome</strong> to open the official Chrome Web Store listing page.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="card" style="text-align: center;">
+          <div class="card-icon red" style="margin: 0 auto 20px;">
+            <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800;">2</span>
+          </div>
+          <h3 class="card-title">Click Add to Chrome</h3>
+          <p class="card-text">
+            Click the blue <strong>"Add to Chrome"</strong> button on the Web Store and confirm installation.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="card" style="text-align: center;">
+          <div class="card-icon green" style="margin: 0 auto 20px;">
+            <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800;">3</span>
+          </div>
+          <h3 class="card-title">Launch Side Panel</h3>
+          <p class="card-text">
+            Open the Hero GoodLife portal and click the extension icon to launch your bulk automation side panel!
+          </p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://chromewebstore.google.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+          Open Chrome Web Store Page
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Automation Simulator Section -->
+  <section class="section" id="simulator">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Interactive Experience</div>
+        <h2 class="section-title">See the Automation Engine in Action</h2>
+        <p class="section-subtitle">Experience how Goodlife Bulk Enrollor parses, validates, and processes batch records in real time.</p>
+      </div>
+
+      <div class="simulator-box">
+        <div class="sim-header">
+          <div class="sim-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            Automation Engine Control Board
+          </div>
+          <span class="sim-status-badge" id="sim-badge">IDLE</span>
+        </div>
+
+        <div class="sim-controls-grid">
+          <div class="sim-field-group">
+            <label class="sim-label">1. Select Enrollment Mode</label>
+            <div class="sim-tab-group">
+              <button class="sim-tab-btn active" id="sim-tab-joyride">Joyride Online</button>
+              <button class="sim-tab-btn" id="sim-tab-goodlife">GoodLife Enrolment</button>
+            </div>
+          </div>
+
+          <div class="sim-field-group">
+            <label class="sim-label">2. Processing Speed: <span id="sim-speed-val" style="color: #2563eb;">Normal (800ms)</span></label>
+            <input type="range" min="1" max="4" value="2" class="sim-slider" id="sim-speed-slider">
+          </div>
+        </div>
+
+        <div class="sim-progress-bar">
+          <div class="sim-progress-fill" id="sim-progress-fill"></div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 0.85rem; color: var(--text-muted);">
+          <span>Queue Progress</span>
+          <span id="sim-count-text">0 / 10 VINs</span>
+        </div>
+
+        <div class="sim-output-console" id="sim-log">
+          <div class="log-line"><span class="log-time">[00:00:00]</span> <span class="log-info">Automation engine ready. Press "Start Test Simulation" to launch process...</span></div>
+        </div>
+
+        <div style="text-align: center;">
+          <button class="btn-primary" id="btn-start-sim">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Start Test Simulation
+          </button>
+          <button class="btn-secondary" id="btn-stop-sim" style="display: none; color: #e11d48; border-color: rgba(225, 29, 72, 0.3);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="6" y="6" width="12" height="12"/></svg>
+            Pause Automation
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features Grid -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Enterprise Capabilities</div>
+        <h2 class="section-title">Engineered for Maximum Efficiency</h2>
+        <p class="section-subtitle">Everything your dealership staff needs to complete daily enrollments in minutes instead of hours.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="card">
+          <div class="card-icon red">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3 class="card-title">Adaptive Speed Engine</h3>
+          <p class="card-text">Self-calibrates execution delays based on real-time portal server response times. Automatically throttles up on fast networks and safely slows down during portal lag.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="card">
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3 class="card-title">Dual-Mode Automation</h3>
+          <p class="card-text">Seamlessly handles both GoodLife Enrolment and Joyride Online Enrollment with mode-specific CSV parsing, Angular reactive form validation, and dropdown handling.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="card">
+          <div class="card-icon green">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3 class="card-title">Smart Skip & Session Memory</h3>
+          <p class="card-text">Never process duplicate entries again. Remembers processed VINs across sessions and intelligently skips already-enrolled vehicles without breaking execution flow.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="card">
+          <div class="card-icon cyan">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="card-title">100% Offline Privacy</h3>
+          <p class="card-text">Zero external servers or telemetry. All customer VIN numbers, phone details, and records remain entirely inside your local Chrome browser storage.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="card">
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+          </div>
+          <h3 class="card-title">Real-Time Analytics Dashboard</h3>
+          <p class="card-text">Live side panel UI displaying total queue size, completion rates, error breakdowns, processing speed (VINs/min), and interactive log filtering.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="card">
+          <div class="card-icon red">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+          </div>
+          <h3 class="card-title">Auto-Network Resilience</h3>
+          <p class="card-text">Detects internet connection dropouts and automatically pauses execution. Resumes seamlessly right where it left off as soon as connectivity is restored.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CSV Format Guide Section -->
+  <section class="section" id="csv-guide">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Documentation</div>
+        <h2 class="section-title">CSV Structure & Format Specifications</h2>
+        <p class="section-subtitle">Download standardized templates or review the required headers for your Excel batch files.</p>
+      </div>
+
+      <div class="csv-tabs">
+        <button class="csv-tab-btn active" id="csv-tab-joyride">Joyride Columns</button>
+        <button class="csv-tab-btn" id="csv-tab-goodlife">GoodLife Columns</button>
+      </div>
+
+      <div class="table-wrapper">
+        <!-- Joyride Table -->
+        <table class="data-table" id="table-joyride">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Header Name</th>
+              <th>Status</th>
+              <th>Example Value</th>
+              <th>Description / Rules</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><code>VIN</code></td>
+              <td><span class="req-badge req-yes">Required</span></td>
+              <td><code>MBLHA10EDBHK12041</code></td>
+              <td>17-character vehicle chassis number</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><code>REG_NO</code></td>
+              <td><span class="req-badge req-no">Optional</span></td>
+              <td><code>MH02AB1234</code></td>
+              <td>Vehicle registration number</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><code>COUPON_NO</code></td>
+              <td><span class="req-badge req-no">Optional</span></td>
+              <td><code>CPN998877</code></td>
+              <td>Joyride scratch coupon number</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><code>EMPLOYEE_CODE</code></td>
+              <td><span class="req-badge req-no">Optional</span></td>
+              <td><code>EMP101</code></td>
+              <td>Dealership salesperson referral code</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><code>PLAN_YEAR</code></td>
+              <td><span class="req-badge req-no">Optional</span></td>
+              <td><code>1</code></td>
+              <td>Duration of plan (Default: 1 Year)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- GoodLife Table -->
+        <table class="data-table" id="table-goodlife" style="display: none;">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Header Name</th>
+              <th>Status</th>
+              <th>Example Value</th>
+              <th>Description / Rules</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><code>VIN</code></td>
+              <td><span class="req-badge req-yes">Required</span></td>
+              <td><code>MBLHA10EDBHK12041</code></td>
+              <td>17-character vehicle chassis number</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><code>CUSTOMER_NAME</code></td>
+              <td><span class="req-badge req-yes">Required</span></td>
+              <td><code>Rajesh Kumar</code></td>
+              <td>Full customer name</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><code>MOBILE</code></td>
+              <td><span class="req-badge req-yes">Required</span></td>
+              <td><code>9876543210</code></td>
+              <td>10-digit primary mobile number</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><code>DOB</code></td>
+              <td><span class="req-badge req-no">Optional</span></td>
+              <td><code>1992-05-15</code></td>
+              <td>Date of birth (YYYY-MM-DD)</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><code>STATE</code></td>
+              <td><span class="req-badge req-no">Optional</span></td>
+              <td><code>Maharashtra</code></td>
+              <td>Cascading district dropdown state</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="text-align: center; margin-top: 32px;">
+        <button class="btn-secondary" id="btn-download-csv">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Sample CSV Template
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Official Privacy Policy Section (For Chrome Web Store Compliance) -->
+  <section class="section" id="privacy-policy">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Trust & Compliance</div>
+        <h2 class="section-title">Privacy Policy & Security Standards</h2>
+        <p class="section-subtitle">Goodlife Bulk Enrollor is engineered with strict zero-telemetry local browser isolation.</p>
+      </div>
+
+      <div class="privacy-box">
+        <p><strong>Last Updated: August 1, 2026</strong></p>
+
+        <h3>1. Data Collection & Privacy Isolation</h3>
+        <p>Goodlife Bulk Enrollor ("the Extension") operates <strong>100% locally</strong> inside the user's Google Chrome browser environment. The Extension does NOT collect, transmit, store, or share any personal, customer, or dealership data on external servers or third-party analytical services.</p>
+
+        <h3>2. Local Data Processing</h3>
+        <p>All vehicle identification numbers (VINs), customer names, contact numbers, and CSV uploaded records remain strictly within Chrome's isolated <code>chrome.storage.local</code> browser environment on the user's machine. This data is utilized solely for form autofill automation on the designated portal.</p>
+
+        <h3>3. Permission Disclosures</h3>
+        <ul>
+          <li><code>activeTab</code> & <code>scripting</code>: Used exclusively to interact with DOM form elements on <code>hmclgoodlife.heromotocorp.biz</code>.</li>
+          <li><code>sidePanel</code>: Used to display the user dashboard interface within Chrome's native side panel.</li>
+          <li><code>storage</code>: Stores user automation preferences and local device license state.</li>
+          <li><code>notifications</code> & <code>alarms</code>: Triggers desktop alerts upon batch task completion.</li>
+        </ul>
+
+        <h3>4. Security & Cryptography</h3>
+        <p>Device license activation uses local AES-256-CBC Web Crypto hardware fingerprint verification. No remote authentication server is contacted during operation.</p>
+
+        <h3>5. Contact Information</h3>
+        <p>For privacy inquiries or technical support, contact CalcLabz at <strong>support@calclabz.com</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Questions & Answers</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-question">
+            How do I install the extension from Chrome Web Store?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            Click the "Add to Chrome" button at the top to open our official Chrome Web Store page, then click "Add to Chrome" and confirm permissions.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Does this tool work for both Joyride and GoodLife?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            Yes! Goodlife Bulk Enrollor features a one-click tab switcher that toggles between Joyride Online Enrollment and GoodLife Enrolment forms.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            How do I obtain an offline License Key for my PC?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            Open the extension side panel, copy your unique Device ID displayed on the screen, and send it to support@calclabz.com to get your license key.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            What happens if my internet connection disconnects mid-batch?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            The extension's Auto-Resilience engine automatically detects internet loss, safely pauses the queue, and resumes right from the last processed VIN once connectivity returns.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="font-family: var(--font-heading); font-weight: 800; font-size: 1.2rem; color: var(--text-main); margin-bottom: 12px;">Goodlife Bulk Enrollor</div>
+          <p style="font-size: 0.9rem; color: var(--text-muted); max-width: 360px;">
+            The enterprise-grade bulk automation extension built for Hero MotoCorp authorized dealerships.
+          </p>
+        </div>
+
+        <div>
+          <div style="font-weight: 700; color: var(--text-main); margin-bottom: 14px;">Quick Links</div>
+          <a href="https://chromewebstore.google.com/" target="_blank" rel="noopener noreferrer" class="footer-link">Chrome Web Store Listing</a>
+          <a href="#features" class="footer-link">Features</a>
+          <a href="#privacy-policy" class="footer-link">Privacy Policy</a>
+        </div>
+
+        <div>
+          <div style="font-weight: 700; color: var(--text-main); margin-bottom: 14px;">Support</div>
+          <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 8px;">CalcLabz Technologies</div>
+          <a href="mailto:support@calclabz.com" class="footer-link">support@calclabz.com</a>
+        </div>
+      </div>
+
+      <div style="text-align: center; border-top: 1px solid var(--border-light); padding-top: 24px; font-size: 0.85rem;">
+        &copy; 2026 Goodlife Bulk Enrollor. All rights reserved. Designed for Hero MotoCorp Dealership Portal.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

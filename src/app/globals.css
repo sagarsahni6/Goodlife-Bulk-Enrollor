@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: var(--font-outfit), sans-serif;
+    --font-sans: var(--font-inter), sans-serif;
+    
+    --hero-red: #E31E24;
+    --hero-red-hover: #CC161B;
+    --hero-red-glow: rgba(227, 30, 36, 0.35);
+    
+    --bg-dark: #07080B;
+    --bg-card: #0D0F17;
+    --bg-card-hover: #141724;
+    --border-card: rgba(255, 255, 255, 0.1);
+    --border-card-bright: rgba(227, 30, 36, 0.35);
+  }
+
+  body {
+    background-color: var(--bg-dark);
+    color: #F1F5F9;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Background Ambient Orbs */
+.bg-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(120px);
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.bg-orb-red {
+  background: radial-gradient(circle, rgba(227, 30, 36, 0.55) 0%, rgba(227, 30, 36, 0) 70%);
+}
+
+.bg-orb-blue {
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.45) 0%, rgba(37, 99, 235, 0) 70%);
+}
+
+.bg-orb-gold {
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.4) 0%, rgba(245, 158, 11, 0) 70%);
+}
+
+/* Text Gradients */
+.text-gradient-red {
+  background: linear-gradient(135deg, #FF5555 0%, #E31E24 50%, #B91C1C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FDE68A 0%, #F59E0B 50%, #D97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-silver {
+  background: linear-gradient(135deg, #FFFFFF 0%, #CBD5E1 50%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #A5F3FC 0%, #06B6D4 50%, #0284C7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism Card Style */
+.glass-card {
+  background: rgba(13, 15, 23, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-hover:hover {
+  border-color: rgba(227, 30, 36, 0.45);
+  box-shadow: 0 10px 30px -10px rgba(227, 30, 36, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Button Glow Effect */
+.btn-hero-red {
+  background: linear-gradient(135deg, #E31E24 0%, #C81419 100%);
+  box-shadow: 0 6px 25px rgba(227, 30, 36, 0.35);
+  transition: all 0.25s ease;
+}
+
+.btn-hero-red:hover {
+  background: linear-gradient(135deg, #F0282E 0%, #E31E24 100%);
+  box-shadow: 0 8px 30px rgba(227, 30, 36, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #07080B;
+}
+::-webkit-scrollbar-thumb {
+  background: #1A1D2A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E31E24;
+}
+
+/* Pulse Animations */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
