@@ -485,6 +485,129 @@ function VinValidator() {
 }
 
 /* ============================================================
+   HOW TO USE GUIDE COMPONENT
+   ============================================================ */
+
+function HowToUseSection() {
+  const steps = [
+    {
+      num: "01",
+      title: "Install & Pin Extension",
+      tag: "Setup",
+      desc: "Install Goodlife Bulk Enrollor from the official Chrome Web Store. Click Chrome's puzzle icon in your toolbar and pin the extension for instant 1-click access during daily operations.",
+      tip: "Pinning the icon lets you launch the side panel anytime with a single click.",
+    },
+    {
+      num: "02",
+      title: "Log In to Hero Dealership Portal",
+      tag: "Authentication",
+      desc: "Open Google Chrome and navigate to the official Hero MotoCorp portal (hmclgoodlife.heromotocorp.biz). Enter your authorized credentials and complete your standard Hero GoodLife login.",
+      tip: "The extension automatically attaches to your authenticated session.",
+    },
+    {
+      num: "03",
+      title: "Prepare Your Batch CSV File",
+      tag: "Data Prep",
+      desc: "Use Excel or Google Sheets to format your daily batch file. Include headers like VIN, CUSTOMER_NAME, MOBILE, DOB, and STATE. Download sample templates from our CSV guide section below.",
+      tip: "Ensure chassis numbers are 17 characters without spaces or invalid letters (I, O, Q).",
+    },
+    {
+      num: "04",
+      title: "Launch Side Panel & Select Mode",
+      tag: "Configuration",
+      desc: "Click the Goodlife Bulk Enrollor toolbar icon to open Chrome's native Side Panel. Select your target form mode: Joyride Online Enrollment or GoodLife Enrolment.",
+      tip: "Use the mode tab switcher to toggle between Joyride and GoodLife forms in 1 click.",
+    },
+    {
+      num: "05",
+      title: "Drag & Drop CSV and Start Automation",
+      tag: "Execution",
+      desc: "Drag and drop your batch .csv file into the upload zone. Review the queue count, set your processing speed slider (Turbo, Fast, Normal, Careful), and click 'Start Automation'.",
+      tip: "Watch live progress, completed counts, and instant log alerts in real time.",
+    },
+    {
+      num: "06",
+      title: "Auto-Resilience & License Key Setup",
+      tag: "Complete",
+      desc: "For first-time use, copy your unique Device ID from the panel and enter your license key. If portal logout or network loss occurs, the engine pauses and safely resumes after re-login.",
+      tip: "Processed VINs are stored locally so duplicate vehicles are automatically skipped.",
+    },
+  ];
+
+  return (
+    <section className="section" id="how-to-use" style={{ background: "var(--color-bg-surface)" }}>
+      <div className="container">
+        <div className="section-header">
+          <div className="section-tag">Step-by-Step Guide</div>
+          <h2 className="section-title">How to Use Goodlife Bulk Enrollor</h2>
+          <p className="section-subtitle">
+            Follow this simple 6-step walkthrough to automate Hero GoodLife login sessions and process batch vehicle enrollments in minutes.
+          </p>
+        </div>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+          {steps.map((step) => (
+            <div
+              className="card"
+              key={step.num}
+              style={{
+                position: "relative",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                padding: "24px",
+                borderTop: "4px solid var(--color-primary)",
+              }}
+            >
+              <div>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px" }}>
+                  <span
+                    style={{
+                      fontFamily: "var(--font-mono)",
+                      fontSize: "22px",
+                      fontWeight: "800",
+                      color: "var(--color-primary)",
+                      background: "var(--color-primary-subtle)",
+                      padding: "4px 12px",
+                      borderRadius: "8px",
+                    }}
+                  >
+                    {step.num}
+                  </span>
+                  <span className="req-badge req-no" style={{ fontSize: "11px", textTransform: "uppercase" }}>
+                    {step.tag}
+                  </span>
+                </div>
+
+                <h3 className="card-title" style={{ fontSize: "1.2rem", marginBottom: "12px" }}>
+                  {step.title}
+                </h3>
+                <p className="card-text" style={{ fontSize: "0.92rem", lineHeight: "1.6", marginBottom: "20px" }}>
+                  {step.desc}
+                </p>
+              </div>
+
+              <div
+                style={{
+                  padding: "10px 12px",
+                  borderRadius: "var(--radius-sm)",
+                  background: "var(--color-bg-primary)",
+                  border: "1px solid var(--color-border)",
+                  fontSize: "0.82rem",
+                  color: "var(--color-text-secondary)",
+                }}
+              >
+                💡 <strong>Pro Tip:</strong> {step.tip}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ============================================================
    MAIN PAGE COMPONENT (LIGHT THEME)
    ============================================================ */
 
@@ -521,6 +644,7 @@ export default function Home() {
 
           <ul className={`nav-links ${mobileNavOpen ? "active" : ""}`} id="nav-links-menu">
             <li><a href="#install" className="nav-link" id="link-install" onClick={() => setMobileNavOpen(false)}>Chrome Web Store</a></li>
+            <li><a href="#how-to-use" className="nav-link" id="link-how-to-use" onClick={() => setMobileNavOpen(false)}>How to Use</a></li>
             <li><a href="#features" className="nav-link" id="link-features" onClick={() => setMobileNavOpen(false)}>Features</a></li>
             <li><a href="#simulator" className="nav-link" id="link-simulator" onClick={() => setMobileNavOpen(false)}>Live Demo</a></li>
             <li><a href="#csv-guide" className="nav-link" id="link-csv" onClick={() => setMobileNavOpen(false)}>CSV Format &amp; Validator</a></li>
@@ -649,6 +773,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ─── DETAILED HOW TO USE GUIDE ─── */}
+      <HowToUseSection />
 
       {/* ─── LIVE AUTOMATION SIMULATOR ─── */}
       <section className="section" id="simulator">
