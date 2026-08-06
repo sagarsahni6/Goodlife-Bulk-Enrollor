@@ -29,7 +29,7 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ["400", "500"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://goodlife-enrollor.vercel.app";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://goodlife.calclabz.com";
 
 export const viewport: Viewport = {
   themeColor: "#e11d48",

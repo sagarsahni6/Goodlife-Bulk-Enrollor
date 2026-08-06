@@ -23,7 +23,7 @@ Your website repository is pre-configured with:
 3. Click **Add Property** (top left dropdown).
 4. Choose one of the property types:
    - **Domain Property** (Recommended if you own a custom domain like `example.com` via DNS verification).
-   - **URL Prefix Property** (Easiest for Vercel/Netlify URLs like `https://goodlife-enrollor.vercel.app`).
+   - **URL Prefix Property** (Easiest for Vercel/Netlify URLs like `https://goodlife.calclabz.com`).
 
 ---
 
@@ -61,7 +61,7 @@ Your website repository is pre-configured with:
 
 ### Step 4: Inspect & Request Indexing
 1. Use the URL Inspection tool at the top of Search Console.
-2. Enter your main site URL: `https://goodlife-enrollor.vercel.app`.
+2. Enter your main site URL: `https://goodlife.calclabz.com`.
 3. Click **Test Live URL**.
 4. Click **Request Indexing** to prioritize instant crawl by Googlebot.
 
@@ -72,8 +72,8 @@ Your website repository is pre-configured with:
 Create or update `.env.local` (or set in Vercel project settings):
 
 ```env
-# Custom Domain (Defaults to https://goodlife-enrollor.vercel.app if unset)
-NEXT_PUBLIC_SITE_URL=https://goodlife-enrollor.vercel.app
+# Custom Domain (Defaults to https://goodlife.calclabz.com if unset)
+NEXT_PUBLIC_SITE_URL=https://goodlife.calclabz.com
 
 # Google Search Console Verification String
 NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=your_gsc_verification_code_here
