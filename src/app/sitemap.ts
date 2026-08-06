@@ -1,50 +1,39 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://goodlife-enrollor.vercel.app";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://goodlife-enrollor.vercel.app";
+  const lastModified = new Date();
 
   return [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "weekly",
       priority: 1.0,
     },
     {
-      url: `${baseUrl}#tiers`,
-      lastModified: new Date(),
+      url: `${baseUrl}/#features`,
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}#features`,
-      lastModified: new Date(),
+      url: `${baseUrl}/#csv-guide`,
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}#simulator`,
-      lastModified: new Date(),
+      url: `${baseUrl}/#privacy-policy`,
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: `${baseUrl}#csv-guide`,
-      lastModified: new Date(),
+      url: `${baseUrl}/#faq`,
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.7,
-    },
-    {
-      url: `${baseUrl}#privacy`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}#faq`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
     },
   ];
 }
