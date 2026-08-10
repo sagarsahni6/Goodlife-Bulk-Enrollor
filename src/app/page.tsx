@@ -608,6 +608,149 @@ function HowToUseSection() {
 }
 
 /* ============================================================
+   HERO GOODLIFE LOGIN HUB & QUICK ACCESS GUIDE COMPONENT
+   ============================================================ */
+
+function GoodlifeLoginHub() {
+  return (
+    <section className="section" id="goodlife-login-guide" style={{ background: "var(--color-bg-secondary)" }}>
+      <div className="container">
+        <div className="section-header">
+          <div className="section-tag">Hero GoodLife Login Hub</div>
+          <h2 className="section-title">Hero GoodLife Login &amp; Portal Access Guide</h2>
+          <p className="section-subtitle">
+            Direct portal links, dealer authentication instructions, login troubleshooting, and automated bulk registration for Hero MotoCorp authorized staff.
+          </p>
+        </div>
+
+        {/* 2-Column Grid: Left (Official Access Card), Right (Login Steps & Troubleshooting) */}
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "28px", marginBottom: "40px" }}>
+          
+          {/* Card 1: Official Portal Access & Direct URL */}
+          <div className="card" style={{ borderTop: "4px solid var(--color-primary)", padding: "28px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+            <div>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
+                <div className="card-icon blue" style={{ margin: 0 }}>🔑</div>
+                <div>
+                  <h3 className="card-title" style={{ margin: 0, fontSize: "1.25rem" }}>Official Hero GoodLife Portal</h3>
+                  <span style={{ fontSize: "0.8rem", color: "var(--color-success)", fontWeight: 600 }}>HMCL Official Portal Verified</span>
+                </div>
+              </div>
+
+              <p className="card-text" style={{ fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "20px" }}>
+                The official portal for <strong>Hero GoodLife login</strong> and dealership vehicle registrations is hosted on Hero MotoCorp&rsquo;s enterprise portal infrastructure. Authorized dealership staff can access their account directly below.
+              </p>
+
+              <div style={{ background: "var(--color-bg-surface)", padding: "16px", borderRadius: "var(--radius-md)", border: "1px solid var(--color-border)", marginBottom: "20px" }}>
+                <div style={{ fontSize: "0.75rem", textTransform: "uppercase", color: "var(--color-text-dim)", fontWeight: 700, letterSpacing: "0.05em", marginBottom: "4px" }}>
+                  OFFICIAL HERO GOODLIFE LOGIN URL
+                </div>
+                <code style={{ fontSize: "0.95rem", fontWeight: 700, color: "var(--color-primary)" }}>
+                  hmclgoodlife.heromotocorp.biz
+                </code>
+              </div>
+
+              <ul style={{ fontSize: "0.88rem", color: "var(--color-text-secondary)", lineHeight: "1.8", paddingLeft: "18px", marginBottom: "24px" }}>
+                <li>Supports <strong>Hero GoodLife Dealer Login</strong> credentials</li>
+                <li>Access to Joyride AMC online registration forms</li>
+                <li>GoodLife Member Tiers: <strong>Pro (₹199), Silver (₹299), Gold (₹399), Platinum (₹499)</strong></li>
+                <li>Real-time customer OTP validation &amp; district dropdown mapping</li>
+              </ul>
+            </div>
+
+            <a
+              href="https://hmclgoodlife.heromotocorp.biz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+              style={{ width: "100%", justifyContent: "center" }}
+              id="btn-direct-goodlife-login"
+            >
+              Open Hero GoodLife Login Portal ↗
+            </a>
+          </div>
+
+          {/* Card 2: 4-Step Dealer Login Walkthrough */}
+          <div className="card" style={{ borderTop: "4px solid var(--color-secondary)", padding: "28px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
+              <div className="card-icon red" style={{ margin: 0 }}>⚡</div>
+              <div>
+                <h3 className="card-title" style={{ margin: 0, fontSize: "1.25rem" }}>Dealership Staff Login Steps</h3>
+                <span style={{ fontSize: "0.8rem", color: "var(--color-text-dim)" }}>Quick 4-Step Authentication</span>
+              </div>
+            </div>
+
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <div style={{ display: "flex", gap: "14px" }}>
+                <div style={{ width: "28px", height: "28px", borderRadius: "50%", background: "var(--color-secondary-subtle)", color: "var(--color-secondary)", fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontSize: "0.85rem" }}>1</div>
+                <div>
+                  <h4 style={{ margin: 0, fontSize: "0.95rem", fontWeight: 700 }}>Open Chrome Browser</h4>
+                  <p style={{ margin: "2px 0 0", fontSize: "0.85rem", color: "var(--color-text-dim)" }}>Launch Google Chrome on your dealership workstation PC.</p>
+                </div>
+              </div>
+
+              <div style={{ display: "flex", gap: "14px" }}>
+                <div style={{ width: "28px", height: "28px", borderRadius: "50%", background: "var(--color-secondary-subtle)", color: "var(--color-secondary)", fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontSize: "0.85rem" }}>2</div>
+                <div>
+                  <h4 style={{ margin: 0, fontSize: "0.95rem", fontWeight: 700 }}>Enter Authorized Credentials</h4>
+                  <p style={{ margin: "2px 0 0", fontSize: "0.85rem", color: "var(--color-text-dim)" }}>Input your Hero Dealership User ID, Password, and solve CAPTCHA.</p>
+                </div>
+              </div>
+
+              <div style={{ display: "flex", gap: "14px" }}>
+                <div style={{ width: "28px", height: "28px", borderRadius: "50%", background: "var(--color-secondary-subtle)", color: "var(--color-secondary)", fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontSize: "0.85rem" }}>3</div>
+                <div>
+                  <h4 style={{ margin: 0, fontSize: "0.95rem", fontWeight: 700 }}>Launch Goodlife Bulk Enrollor Extension</h4>
+                  <p style={{ margin: "2px 0 0", fontSize: "0.85rem", color: "var(--color-text-dim)" }}>Click our extension icon in your Chrome toolbar to open Chrome&rsquo;s native Side Panel.</p>
+                </div>
+              </div>
+
+              <div style={{ display: "flex", gap: "14px" }}>
+                <div style={{ width: "28px", height: "28px", borderRadius: "50%", background: "var(--color-secondary-subtle)", color: "var(--color-secondary)", fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontSize: "0.85rem" }}>4</div>
+                <div>
+                  <h4 style={{ margin: 0, fontSize: "0.95rem", fontWeight: 700 }}>Upload CSV &amp; Automate Enrollments</h4>
+                  <p style={{ margin: "2px 0 0", fontSize: "0.85rem", color: "var(--color-text-dim)" }}>Drag and drop your batch Excel file to process 50+ VINs in under 2 minutes!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* GoodLife Login Troubleshooting & Common Solutions Box */}
+        <div style={{ background: "var(--color-bg-surface)", padding: "28px", borderRadius: "var(--radius-lg)", border: "1px solid var(--color-border)" }}>
+          <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "16px", display: "flex", alignItems: "center", gap: "8px" }}>
+            <span style={{ color: "#d97706" }}>🛠️</span> Hero GoodLife Login Troubleshooting &amp; FAQs
+          </h3>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "20px", fontSize: "0.9rem" }}>
+            <div>
+              <h4 style={{ fontWeight: 700, color: "var(--color-text-primary)", marginBottom: "6px" }}>Session Timeout Error during Bulk Entry?</h4>
+              <p style={{ color: "var(--color-text-dim)", lineHeight: "1.5" }}>
+                The official portal logouts after periods of inactivity. <strong>Goodlife Bulk Enrollor</strong> features auto-resilience that pauses your queue safely, allowing you to re-authenticate your <strong>hero goodlife login</strong> without losing batch progress.
+              </p>
+            </div>
+
+            <div>
+              <h4 style={{ fontWeight: 700, color: "var(--color-text-primary)", marginBottom: "6px" }}>Forgot Password or Locked Account?</h4>
+              <p style={{ color: "var(--color-text-dim)", lineHeight: "1.5" }}>
+                If your dealer login credentials fail on <code>hmclgoodlife.heromotocorp.biz</code>, use the portal&rsquo;s password recovery link or contact your Hero MotoCorp zonal IT administrator.
+              </p>
+            </div>
+
+            <div>
+              <h4 style={{ fontWeight: 700, color: "var(--color-text-primary)", marginBottom: "6px" }}>District Dropdown Loading Slow?</h4>
+              <p style={{ color: "var(--color-text-dim)", lineHeight: "1.5" }}>
+                Our extension handles asynchronous state-to-district dropdown binding automatically, ensuring zero submission failures for customer GoodLife enrollments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ============================================================
    MAIN PAGE COMPONENT (LIGHT THEME)
    ============================================================ */
 
@@ -643,6 +786,7 @@ export default function Home() {
           </a>
 
           <ul className={`nav-links ${mobileNavOpen ? "active" : ""}`} id="nav-links-menu">
+            <li><a href="#goodlife-login-guide" className="nav-link" id="link-login-guide" onClick={() => setMobileNavOpen(false)}>GoodLife Login Guide</a></li>
             <li><a href="#install" className="nav-link" id="link-install" onClick={() => setMobileNavOpen(false)}>Chrome Web Store</a></li>
             <li><a href="#how-to-use" className="nav-link" id="link-how-to-use" onClick={() => setMobileNavOpen(false)}>How to Use</a></li>
             <li><a href="#features" className="nav-link" id="link-features" onClick={() => setMobileNavOpen(false)}>Features</a></li>
@@ -739,6 +883,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ─── HERO GOODLIFE LOGIN HUB & GUIDE ─── */}
+      <GoodlifeLoginHub />
 
       {/* ─── CHROME WEB STORE INSTALL ─── */}
       <section className="section install-section" id="install">
@@ -912,20 +1059,24 @@ export default function Home() {
 
           <div className="faq-grid">
             <FaqItem
+              question="What is the official URL for Hero GoodLife Login?"
+              answer="The official portal for Hero GoodLife login is hmclgoodlife.heromotocorp.biz. Hero MotoCorp authorized dealership staff can access their account using their official dealer credentials."
+            />
+            <FaqItem
               question="How do I automate my Hero GoodLife login and enrollment process?"
-              answer="Install the extension from the Chrome Web Store, navigate to the Hero MotoCorp dealership portal, complete your regular Hero GoodLife login, and launch the side panel to upload your batch CSV file."
+              answer="Install Goodlife Bulk Enrollor from the Chrome Web Store, navigate to hmclgoodlife.heromotocorp.biz, complete your regular Hero GoodLife login, and launch the side panel to upload your batch CSV file."
             />
             <FaqItem
               question="Does this tool work for both Joyride and GoodLife forms?"
-              answer="Yes! Goodlife Bulk Enrollor features a one-click tab switcher that toggles between Joyride Online Enrollment and GoodLife enrolment forms."
+              answer="Yes! Goodlife Bulk Enrollor features a one-click tab switcher that toggles between Joyride Online Enrollment and GoodLife enrolment forms across all GoodLife membership tiers (Pro, Silver, Gold, Platinum)."
+            />
+            <FaqItem
+              question="How to resolve Hero GoodLife login session expired errors?"
+              answer="The extension's Auto-Resilience engine automatically detects portal logouts or internet drops. It safely pauses your queue and resumes automatically right where it left off once re-authenticated."
             />
             <FaqItem
               question="How do I obtain an offline License Key for my PC?"
               answer="Open the extension side panel, copy your unique Device ID displayed on the screen, and email it to support@calclabz.com to receive your instant license key."
-            />
-            <FaqItem
-              question="What happens if my GoodLife login session expires or network drops?"
-              answer="The extension's Auto-Resilience engine automatically detects internet loss or session timeouts, safely pauses the queue, and resumes right from the last processed VIN once re-authenticated."
             />
           </div>
         </div>
@@ -943,6 +1094,9 @@ export default function Home() {
               <div className="seo-tags-wrap">
                 <span className="seo-tag-pill">goodlife login</span>
                 <span className="seo-tag-pill">hero goodlife login</span>
+                <span className="seo-tag-pill">hmcl goodlife login</span>
+                <span className="seo-tag-pill">goodlife login portal</span>
+                <span className="seo-tag-pill">hero goodlife portal</span>
                 <span className="seo-tag-pill">Goodlife Bulk Enrollor</span>
               </div>
             </div>

@@ -1,17 +1,17 @@
 import React from "react";
 
 export default function JsonLd() {
-  const baseUrl = "https://goodlife-enrollor.vercel.app";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://goodlife.calclabz.com";
 
   const softwareAppSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Goodlife Bulk Enrollor v4.0",
-    "alternateName": "Joyride Automate",
+    "alternateName": "Hero GoodLife Login Automator",
     "operatingSystem": "Google Chrome, Windows, macOS, Linux",
     "applicationCategory": "BusinessApplication",
     "browserRequirements": "Requires Google Chrome browser or Chromium-based browser",
-    "description": "Automate Hero GoodLife & Joyride bulk vehicle enrollments 10x faster for Hero MotoCorp authorized dealerships across India. Fully compatible with Pro, Silver, Gold & Platinum loyalty plans and Joyride AMC packages.",
+    "description": "Official Hero GoodLife login guide and bulk vehicle enrollment automation extension for Hero MotoCorp authorized dealerships across India. Fully compatible with Pro, Silver, Gold & Platinum loyalty plans and Joyride AMC packages.",
     "url": baseUrl,
     "image": `${baseUrl}/assets/promo_large_1280x800.png`,
     "screenshot": `${baseUrl}/assets/promo_large_1280x800.png`,

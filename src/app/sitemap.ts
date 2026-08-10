@@ -8,38 +8,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: baseUrl,
       lastModified,
-      changeFrequency: "weekly",
+      changeFrequency: "daily",
       priority: 1.0,
-    },
-    {
-      url: `${baseUrl}/#how-to-use`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/#features`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/#csv-guide`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/#privacy-policy`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/#faq`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
     },
   ];
 }
