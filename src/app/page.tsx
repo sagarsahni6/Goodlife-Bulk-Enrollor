@@ -786,13 +786,11 @@ export default function Home() {
           </a>
 
           <ul className={`nav-links ${mobileNavOpen ? "active" : ""}`} id="nav-links-menu">
-            <li><a href="#goodlife-login-guide" className="nav-link" id="link-login-guide" onClick={() => setMobileNavOpen(false)}>GoodLife Login Guide</a></li>
-            <li><a href="#install" className="nav-link" id="link-install" onClick={() => setMobileNavOpen(false)}>Chrome Web Store</a></li>
+            <li><a href="#goodlife-login-guide" className="nav-link" id="link-login-guide" onClick={() => setMobileNavOpen(false)}>Login Guide</a></li>
             <li><a href="#how-to-use" className="nav-link" id="link-how-to-use" onClick={() => setMobileNavOpen(false)}>How to Use</a></li>
             <li><a href="#features" className="nav-link" id="link-features" onClick={() => setMobileNavOpen(false)}>Features</a></li>
             <li><a href="#simulator" className="nav-link" id="link-simulator" onClick={() => setMobileNavOpen(false)}>Live Demo</a></li>
-            <li><a href="#csv-guide" className="nav-link" id="link-csv" onClick={() => setMobileNavOpen(false)}>CSV Format &amp; Validator</a></li>
-            <li><a href="#privacy-policy" className="nav-link" id="link-privacy" onClick={() => setMobileNavOpen(false)}>Privacy Policy</a></li>
+            <li><a href="#csv-guide" className="nav-link" id="link-csv" onClick={() => setMobileNavOpen(false)}>CSV Format</a></li>
             <li><a href="#faq" className="nav-link" id="link-faq" onClick={() => setMobileNavOpen(false)}>FAQ</a></li>
           </ul>
 
