@@ -501,7 +501,7 @@ function HowToUseSection() {
       num: "02",
       title: "Log In to Hero Dealership Portal",
       tag: "Authentication",
-      desc: "Open Google Chrome and navigate to the official Hero MotoCorp portal (hmclgoodlife.heromotocorp.biz). Enter your authorized credentials and complete your standard Hero GoodLife login.",
+      desc: "Open Google Chrome and navigate to the official Hero MotoCorp portal (hmclgoodlife.heromotocorp.biz/GoodlifeDLWeb/#/login). Enter your authorized credentials and complete your standard Hero GoodLife login.",
       tip: "The extension automatically attaches to your authenticated session.",
     },
     {
@@ -645,8 +645,8 @@ function GoodlifeLoginHub() {
                 <div style={{ fontSize: "0.75rem", textTransform: "uppercase", color: "var(--color-text-dim)", fontWeight: 700, letterSpacing: "0.05em", marginBottom: "4px" }}>
                   OFFICIAL HERO GOODLIFE LOGIN URL
                 </div>
-                <code style={{ fontSize: "0.95rem", fontWeight: 700, color: "var(--color-primary)" }}>
-                  hmclgoodlife.heromotocorp.biz
+                <code style={{ fontSize: "0.88rem", fontWeight: 700, color: "var(--color-primary)", wordBreak: "break-all" }}>
+                  hmclgoodlife.heromotocorp.biz/GoodlifeDLWeb/#/login
                 </code>
               </div>
 
@@ -659,7 +659,7 @@ function GoodlifeLoginHub() {
             </div>
 
             <a
-              href="https://hmclgoodlife.heromotocorp.biz"
+              href="https://hmclgoodlife.heromotocorp.biz/GoodlifeDLWeb/#/login"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
@@ -733,7 +733,7 @@ function GoodlifeLoginHub() {
             <div>
               <h4 style={{ fontWeight: 700, color: "var(--color-text-primary)", marginBottom: "6px" }}>Forgot Password or Locked Account?</h4>
               <p style={{ color: "var(--color-text-dim)", lineHeight: "1.5" }}>
-                If your dealer login credentials fail on <code>hmclgoodlife.heromotocorp.biz</code>, use the portal&rsquo;s password recovery link or contact your Hero MotoCorp zonal IT administrator.
+                If your dealer login credentials fail on <code>hmclgoodlife.heromotocorp.biz/GoodlifeDLWeb/#/login</code>, use the portal&rsquo;s password recovery link or contact your Hero MotoCorp zonal IT administrator.
               </p>
             </div>
 
@@ -1030,7 +1030,7 @@ export default function Home() {
 
             <h3>3. Permission Disclosures</h3>
             <ul>
-              <li><code>activeTab</code> &amp; <code>scripting</code>: Used exclusively to interact with DOM form elements on <code>hmclgoodlife.heromotocorp.biz</code> during enrollment.</li>
+              <li><code>activeTab</code> &amp; <code>scripting</code>: Used exclusively to interact with DOM form elements on <code>hmclgoodlife.heromotocorp.biz/GoodlifeDLWeb/#/login</code> during enrollment.</li>
               <li><code>sidePanel</code>: Displays the automation control dashboard within Chrome&rsquo;s native side panel.</li>
               <li><code>storage</code>: Stores local batch queue progress and offline license validation state.</li>
               <li><code>notifications</code> &amp; <code>alarms</code>: Triggers desktop alerts upon batch completion.</li>
@@ -1060,11 +1060,11 @@ export default function Home() {
           <div className="faq-grid">
             <FaqItem
               question="What is the official URL for Hero GoodLife Login?"
-              answer="The official portal for Hero GoodLife login is hmclgoodlife.heromotocorp.biz. Hero MotoCorp authorized dealership staff can access their account using their official dealer credentials."
+              answer="The official portal for Hero GoodLife login is hmclgoodlife.heromotocorp.biz/GoodlifeDLWeb/#/login. Hero MotoCorp authorized dealership staff can access their account using their official dealer credentials."
             />
             <FaqItem
               question="How do I automate my Hero GoodLife login and enrollment process?"
-              answer="Install Goodlife Bulk Enrollor from the Chrome Web Store, navigate to hmclgoodlife.heromotocorp.biz, complete your regular Hero GoodLife login, and launch the side panel to upload your batch CSV file."
+              answer="Install Goodlife Bulk Enrollor from the Chrome Web Store, navigate to hmclgoodlife.heromotocorp.biz/GoodlifeDLWeb/#/login, complete your regular Hero GoodLife login, and launch the side panel to upload your batch CSV file."
             />
             <FaqItem
               question="Does this tool work for both Joyride and GoodLife forms?"

@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     template: "%s | Hero GoodLife Login & Bulk Enrollor",
   },
   description:
-    "Official guide & bulk automation tool for Hero GoodLife login portal (hmclgoodlife.heromotocorp.biz). Automate dealer logins & VIN enrollments 10x faster for Hero MotoCorp authorized dealerships across India.",
+    "Official guide & bulk automation tool for Hero GoodLife login portal (hmclgoodlife.heromotocorp.biz/GoodlifeDLWeb/#/login). Automate dealer logins & VIN enrollments 10x faster for Hero MotoCorp authorized dealerships across India.",
   keywords: [
     "goodlife login",
     "hero goodlife login",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     "hero goodlife login dealer",
     "hero goodlife bulk enrollor",
     "joyride hero goodlife login",
-    "hmclgoodlife.heromotocorp.biz login",
+    "hmclgoodlife.heromotocorp.biz/GoodlifeDLWeb/#/login",
     "hero goodlife enrolment login",
     "goodlife login portal reset password",
     "Goodlife Bulk Enrollor",
@@ -183,7 +183,7 @@ const jsonLdFaq = {
       name: "What is the official URL for Hero GoodLife Login?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The official portal for Hero GoodLife login is hmclgoodlife.heromotocorp.biz. Hero MotoCorp authorized dealership staff can access their account using their official dealer credentials.",
+        text: "The official portal for Hero GoodLife login is hmclgoodlife.heromotocorp.biz/GoodlifeDLWeb/#/login. Hero MotoCorp authorized dealership staff can access their account using their official dealer credentials.",
       },
     },
     {
@@ -191,7 +191,7 @@ const jsonLdFaq = {
       name: "How do I automate my Hero GoodLife login and enrollment process?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Install Goodlife Bulk Enrollor from the official Chrome Web Store, navigate to the Hero MotoCorp dealership portal (hmclgoodlife.heromotocorp.biz), complete your regular Hero GoodLife login, and launch the side panel to upload your batch CSV file.",
+        text: "Install Goodlife Bulk Enrollor from the official Chrome Web Store, navigate to the Hero MotoCorp dealership portal (hmclgoodlife.heromotocorp.biz/GoodlifeDLWeb/#/login), complete your regular Hero GoodLife login, and launch the side panel to upload your batch CSV file.",
       },
     },
     {
@@ -274,7 +274,7 @@ const jsonLdHowTo = {
     {
       "@type": "HowToStep",
       name: "Navigate to Hero GoodLife Login Portal",
-      text: "Open Google Chrome and go to the official Hero MotoCorp dealership portal at hmclgoodlife.heromotocorp.biz.",
+      text: "Open Google Chrome and go to the official Hero MotoCorp dealership portal at hmclgoodlife.heromotocorp.biz/GoodlifeDLWeb/#/login.",
       url: siteUrl,
     },
     {
