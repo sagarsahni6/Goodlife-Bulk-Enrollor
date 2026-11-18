@@ -398,36 +398,71 @@
               <td>1</td>
               <td><code>VIN</code></td>
               <td><span class="req-badge req-yes">Required</span></td>
-              <td><code>MBLHA10EDBHK12041</code></td>
+              <td><code>MBLHAW33XSHG04476</code></td>
               <td>17-character vehicle chassis number</td>
             </tr>
             <tr>
               <td>2</td>
-              <td><code>REG_NO</code></td>
+              <td><code>MOBILE</code></td>
               <td><span class="req-badge req-no">Optional</span></td>
-              <td><code>MH02AB1234</code></td>
-              <td>Vehicle registration number</td>
+              <td><code>9996910724</code></td>
+              <td>10-digit customer mobile number</td>
             </tr>
             <tr>
               <td>3</td>
-              <td><code>COUPON_NO</code></td>
+              <td><code>EMAIL</code></td>
               <td><span class="req-badge req-no">Optional</span></td>
-              <td><code>CPN998877</code></td>
-              <td>Joyride scratch coupon number</td>
+              <td><code>customer@gmail.com</code></td>
+              <td>Customer email (overrides invalid DMS "na")</td>
             </tr>
             <tr>
               <td>4</td>
-              <td><code>EMPLOYEE_CODE</code></td>
-              <td><span class="req-badge req-no">Optional</span></td>
-              <td><code>EMP101</code></td>
-              <td>Dealership salesperson referral code</td>
+              <td><code>DISTRICT</code></td>
+              <td><span class="req-badge req-yes">Required</span></td>
+              <td><code>PATNA</code></td>
+              <td>Customer district name (cascades from State)</td>
             </tr>
             <tr>
               <td>5</td>
-              <td><code>PLAN_YEAR</code></td>
+              <td><code>CITY</code></td>
+              <td><span class="req-badge req-yes">Required</span></td>
+              <td><code>PATNA</code></td>
+              <td>Customer city name (cascades from District)</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td><code>TRANSACTION_TYPE</code></td>
+              <td><span class="req-badge req-no">Optional</span></td>
+              <td><code>N</code></td>
+              <td>Transaction type (Default: N for New)</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td><code>JOYRIDE_YEAR</code></td>
               <td><span class="req-badge req-no">Optional</span></td>
               <td><code>1</code></td>
-              <td>Duration of plan (Default: 1 Year)</td>
+              <td>Duration in years (Default: 1)</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td><code>JOYRIDE_PACKAGE</code></td>
+              <td><span class="req-badge req-no">Optional</span></td>
+              <td><code>2</code></td>
+              <td>Package option type (Default: 2)</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td><code>JOYRIDE_CARD_NUMBER</code></td>
+              <td><span class="req-badge req-yes">Required</span></td>
+              <td><code>1136526720002513</code></td>
+              <td>16-digit Joyride card number</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td><code>DISCOUNT</code></td>
+              <td><span class="req-badge req-yes">Required</span></td>
+              <td><code>25</code></td>
+              <td>Discount amount in INR</td>
             </tr>
           </tbody>
         </table>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+<Styles>
+  <Style ss:ID="Default" ss:Name="Normal"><NumberFormat ss:Format="@"/></Style>
+  <Style ss:ID="sHeader"><Font ss:Bold="1"/><NumberFormat ss:Format="@"/></Style>
+  <Style ss:ID="sText"><NumberFormat ss:Format="@"/></Style>
+</Styles>
+<Worksheet ss:Name="Template">
+<Table>
+<Column ss:AutoFitWidth="1"/>
+<Column ss:AutoFitWidth="1"/>
+<Column ss:AutoFitWidth="1"/>
+<Column ss:AutoFitWidth="1"/>
+<Column ss:AutoFitWidth="1"/>
+<Column ss:AutoFitWidth="1"/>
+<Column ss:AutoFitWidth="1"/>
+<Column ss:AutoFitWidth="1"/>
+<Column ss:AutoFitWidth="1"/>
+<Column ss:AutoFitWidth="1"/>
+<Row>
+  <Cell ss:StyleID="sHeader"><Data ss:Type="String">vin</Data></Cell>
+  <Cell ss:StyleID="sHeader"><Data ss:Type="String">mobile</Data></Cell>
+  <Cell ss:StyleID="sHeader"><Data ss:Type="String">email</Data></Cell>
+  <Cell ss:StyleID="sHeader"><Data ss:Type="String">district</Data></Cell>
+  <Cell ss:StyleID="sHeader"><Data ss:Type="String">city</Data></Cell>
+  <Cell ss:StyleID="sHeader"><Data ss:Type="String">transaction_type</Data></Cell>
+  <Cell ss:StyleID="sHeader"><Data ss:Type="String">joyride_year</Data></Cell>
+  <Cell ss:StyleID="sHeader"><Data ss:Type="String">joyride_package</Data></Cell>
+  <Cell ss:StyleID="sHeader"><Data ss:Type="String">joyride_card_number</Data></Cell>
+  <Cell ss:StyleID="sHeader"><Data ss:Type="String">discount</Data></Cell>
+</Row>
+<Row>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">MBLHAW33XSHG04476</Data></Cell>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">9996910724</Data></Cell>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">customer@gmail.com</Data></Cell>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">PATNA</Data></Cell>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">PATNA</Data></Cell>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">N</Data></Cell>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">1</Data></Cell>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">2</Data></Cell>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">1136526720002513</Data></Cell>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">25</Data></Cell>
+</Row>
+<Row>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">MBLKCU121RHF00048</Data></Cell>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">9876543210</Data></Cell>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">hero.owner@gmail.com</Data></Cell>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">GURGAON</Data></Cell>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">GURGAON</Data></Cell>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">N</Data></Cell>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">1</Data></Cell>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">2</Data></Cell>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">9988776655443322</Data></Cell>
+  <Cell ss:StyleID="sText"><Data ss:Type="String">30</Data></Cell>
+</Row>
+</Table>
+</Worksheet>
+</Workbook>

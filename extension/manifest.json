@@ -1,0 +1,78 @@
+{
+  "manifest_version": 3,
+  "name": "Goodlife Bulk Enrollor",
+  "version": "4.2",
+  "description": "Bulk automation for GoodLife & Joyride enrollment on Hero GoodLife portal. Smart validation & intelligent processing.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "sidePanel",
+    "notifications",
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://hmclgoodlife.heromotocorp.biz/*"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://hmclgoodlife.heromotocorp.biz/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "inject.js"
+      ],
+      "matches": [
+        "https://hmclgoodlife.heromotocorp.biz/*"
+      ]
+    }
+  ],
+  "commands": {
+    "start-resume": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S"
+      },
+      "description": "Start or Resume automation"
+    },
+    "pause": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P"
+      },
+      "description": "Pause automation"
+    },
+    "reset": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+R"
+      },
+      "description": "Reset automation queue"
+    }
+  }
+}

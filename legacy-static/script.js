@@ -262,9 +262,9 @@ document.addEventListener('DOMContentLoaded', () => {
       let csvContent = "";
       
       if (isJoyride) {
-        csvContent = "VIN,REG_NO,COUPON_NO,EMPLOYEE_CODE,PLAN_YEAR\n" +
-                     "MBLHA10EDBHK12041,MH02AB1234,CPN998877,EMP101,1\n" +
-                     "MBLHA10EDBHK12042,MH02AB5678,CPN998878,EMP101,1\n";
+        csvContent = "vin,mobile,email,district,city,transaction_type,joyride_year,joyride_package,joyride_card_number,discount\n" +
+                     "MBLHAW33XSHG04476,9996910724,customer@gmail.com,PATNA,PATNA,N,1,2,1136526720002513,25\n" +
+                     "MBLKCU121RHF00048,9876543210,hero.owner@gmail.com,GURGAON,GURGAON,N,1,2,9988776655443322,30\n";
       } else {
         csvContent = "VIN,REG_NO,COUPON_NO,CUSTOMER_NAME,MOBILE,DOB,GENDER,STATE,CITY,PINCODE\n" +
                      "MBLHA10EDBHK12041,MH02AB1234,CPN112233,Rajesh Kumar,9876543210,1992-05-15,Male,Maharashtra,Mumbai,400001\n" +

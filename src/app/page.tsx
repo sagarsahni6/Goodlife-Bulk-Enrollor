@@ -298,11 +298,16 @@ function CsvTables() {
   const [activeTab, setActiveTab] = useState<"joyride" | "goodlife">("joyride");
 
   const joyrideColumns = [
-    { num: 1, header: "VIN", required: true, example: "MBLHA10EDBHK12041", desc: "17-character vehicle chassis number" },
-    { num: 2, header: "REG_NO", required: false, example: "MH02AB1234", desc: "Vehicle registration number" },
-    { num: 3, header: "COUPON_NO", required: false, example: "CPN998877", desc: "Joyride scratch coupon number" },
-    { num: 4, header: "EMPLOYEE_CODE", required: false, example: "EMP101", desc: "Dealership salesperson referral code" },
-    { num: 5, header: "PLAN_YEAR", required: false, example: "1", desc: "Duration of plan (Default: 1 Year)" },
+    { num: 1, header: "VIN", required: true, example: "MBLHAW33XSHG04476", desc: "17-character vehicle chassis number" },
+    { num: 2, header: "MOBILE", required: false, example: "9996910724", desc: "10-digit customer mobile number" },
+    { num: 3, header: "EMAIL", required: false, example: "customer@gmail.com", desc: "Customer email (fixes DMS 'na' format error)" },
+    { num: 4, header: "DISTRICT", required: true, example: "PATNA", desc: "Customer district name (cascades from State)" },
+    { num: 5, header: "CITY", required: true, example: "PATNA", desc: "Customer city name (cascades from District)" },
+    { num: 6, header: "TRANSACTION_TYPE", required: false, example: "N", desc: "Transaction type (Default: N for New)" },
+    { num: 7, header: "JOYRIDE_YEAR", required: false, example: "1", desc: "Duration in years (Default: 1)" },
+    { num: 8, header: "JOYRIDE_PACKAGE", required: false, example: "2", desc: "Package option type (Default: 2)" },
+    { num: 9, header: "JOYRIDE_CARD_NUMBER", required: true, example: "1136526720002513", desc: "16-digit Joyride card number" },
+    { num: 10, header: "DISCOUNT", required: true, example: "25", desc: "Discount amount in INR" },
   ];
 
   const goodlifeColumns = [
@@ -318,10 +323,10 @@ function CsvTables() {
     let filename = "";
 
     if (activeTab === "joyride") {
-      content = "VIN,REG_NO,COUPON_NO,EMPLOYEE_CODE,PLAN_YEAR\n" +
-                "MBLHA10EDBHK12041,MH02AB1234,CPN998877,EMP101,1\n" +
-                "MBLHA10EDCHK15923,MH02AB5678,CPN998878,EMP102,1\n";
-      filename = "sample_joyride_enrollment_template.csv";
+      content = "vin,mobile,email,district,city,transaction_type,joyride_year,joyride_package,joyride_card_number,discount\n" +
+                "MBLHAW33XSHG04476,9996910724,customer@gmail.com,PATNA,PATNA,N,1,2,1136526720002513,25\n" +
+                "MBLKCU121RHF00048,9876543210,hero.owner@gmail.com,GURGAON,GURGAON,N,1,2,9988776655443322,30\n";
+      filename = "joyride_enrollment_template.csv";
     } else {
       content = "VIN,CUSTOMER_NAME,MOBILE,DOB,STATE\n" +
                 "MBLHA10EDBHK12041,Rajesh Kumar,9876543210,1992-05-15,Maharashtra\n" +
