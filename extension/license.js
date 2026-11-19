@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════
-// LICENSE MANAGER — Goodlife Bulk Enrollor v4.0
+// LICENSE MANAGER — Goodlife Bulk Enrollor v4.3
 // Secure key-based licensing with anti-tamper protections.
 // - AES-256-CBC encrypted storage (Web Crypto API)
 // - chrome.storage.sync persistence (survives reinstall)

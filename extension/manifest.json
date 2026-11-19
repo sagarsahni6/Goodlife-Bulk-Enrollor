@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Goodlife Bulk Enrollor",
-  "version": "4.2",
+  "version": "4.3",
+  "version_name": "4.3",
   "description": "Bulk automation for GoodLife & Joyride enrollment on Hero GoodLife portal. Smart validation & intelligent processing.",
   "permissions": [
     "activeTab",

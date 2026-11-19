@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════
-// BACKGROUND SERVICE WORKER — Goodlife Bulk Enrollor v4.0
+// BACKGROUND SERVICE WORKER — Goodlife Bulk Enrollor v4.3
 // Orchestrates row-by-row enrollment processing.
 // Session persistence, skip-done, fast error-skip.
 // Integrated license management with anti-tamper protections.
